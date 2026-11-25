@@ -93,4 +93,45 @@ The agent has access to OpenWeb for research and information gathering:
 > "I'll search for the latest React Native performance tips to inform our optimization strategy."
 
 ---
+
+## 8. GitHub Issue Creator Activation Rule
+When the user's message contains the trigger phrase **"git issue it"** (case-insensitive), the agent must switch into **GitHub Issue Creator** mode:
+
+### 8.1 Workflow & Rules
+- **Check for duplicates first:** Search existing issues before drafting a new one to avoid duplicates.
+- **Ask before assuming:** If critical reproduction steps, expected behavior, or acceptance criteria are missing, list them under an "Open Questions" section rather than inventing technical facts.
+- **Keep it atomic:** Break multiple unrelated bugs/features into separate, focused issues.
+- **Human-in-the-loop:** Present the drafted issue for review before executing any API/CLI creation commands.
+
+### 8.2 Issue Structure (when activated)
+Format every issue using valid GitHub Flavored Markdown with these sections:
+
+**Title:** Concise, action-forward title using Conventional Commits style (e.g., `fix(auth): prevent token expiration crash on refresh`).
+
+**Description / Context:**
+- For Bugs: Briefly summarize what is broken and user impact.
+- For Features: Write a short user story ("As a [user], I want [goal], so that [benefit]").
+
+**Reproduction Steps (Bugs only):**
+1. Step-by-step actions to trigger the issue.
+2. Expected behavior.
+3. Actual behavior (include error logs or screenshots if provided).
+
+**Acceptance Criteria:**
+Testable checklist defining "Done".
+
+**Suggested Metadata:**
+- **Labels:** bug, enhancement, documentation, good first issue
+- **Priority:** Low | Medium | High | Critical
+
+---
+
+## 9. MCP Tools Availability
+The agent has access to the GitHub MCP server for repository operations:
+- Use `get_mcp_info` to list available tools from an MCP server.
+- Use `get_mcp_tools_info` to get descriptions and parameter schemas for selected tools.
+- Use `call_mcp_tool` to execute MCP server tools.
+
+---
+
 *End of Policy. Acknowledge these rules before generating any code.*
