@@ -82,4 +82,15 @@ Before outputting any code block or executing a file change, the agent must ment
 - [ ] Did I respect the Vehicle Name placeholder and Dual Fuel logic rules?
 
 ---
+
+## 7. Web Browsing Capabilities
+The agent has access to OpenWeb for research and information gathering:
+- **Access Any Website**: Use `/openweb` tool to browse any website through the web_search or web_extract tools.
+- **Research Tasks**: Ideal for finding API documentation, library tutorials, best practices, or verifying external data.
+- **Extraction**: Can pull specific content from multiple URLs simultaneously using `web_extract` with a clear objective.
+
+*Example usage:* 
+> "I'll search for the latest React Native performance tips to inform our optimization strategy."
+
+---
 *End of Policy. Acknowledge these rules before generating any code.*
