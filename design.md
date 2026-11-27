@@ -9,6 +9,13 @@ The product is designed to be simple, fast, and practical for daily use on mobil
 
 ## 2. Technology Stack
 To ensure the codebase is highly maintainable, type-safe, and contributor-friendly, the following stack is selected:
+
+***
+**🚀 CORE FOCUS DIRECTIVE (User Update)**
+I would like to focus on the core of the app. The purpose of the app is to log expenses that are involved directly on the vehicle, this involves fuel, car service, car maintenance etc. Let's work more into fuel log. Instead of standard manual logging, I want to prioritize:
+1. Reading notifications from the mobile app when payment is made (auto-logging).
+2. Taking a picture of the receipt and using OCR to populate the log.
+***
 - **Framework:** React Native + Expo (SDK 51+)
 - **Language:** TypeScript (Strict mode enabled)
 - **Routing:** Expo Router (File-based routing, seamless mobile and web support)
@@ -130,41 +137,15 @@ interface FuelLog {
 
 ---
 
-## 6. Folder Structure (Contributor Friendly)
-```text
-/src
-  /app                # Expo Router file-based routes
-    /(tabs)           # Main tab navigation
-      index.tsx       # Dashboard / Vehicle List
-      logs.tsx        # Recent Logs
-      settings.tsx    # Settings Page
-    /vehicle
-      [id].tsx        # Vehicle Edit Screen
-      new.tsx         # Vehicle Create Screen
-    /log
-      new.tsx         # Add Fuel Log Screen
-  /components         # Reusable UI components (Button, Input, Card, Toggle)
-  /features           # Feature-specific logic and complex components
-    /vehicle          # Vehicle form logic, dual-fuel toggle component
-    /fuel-log         # Fuel log form, consumption calculation display
-  /hooks              # Custom React hooks (e.g., useVehicles, useTheme)
-  /lib                # Utilities (unit converters, date formatters, db setup)
-  /stores             # Zustand state stores (vehicleStore, settingsStore)
-  /theme              # NativeWind config, colors, and theme definitions
-  /types              # Global TypeScript interfaces (Vehicle, FuelLog)
-```
+## 6. UX Rules & Edge Cases
 
----
-
-## 7. UX Rules & Edge Cases
-
-### 7.1 UX Rules
+### 6.1 UX Rules
 - **Mobile First:** One-handed operation. Primary actions (Save, Add Log) must be reachable with the thumb (e.g., fixed bottom buttons or FAB).
 - **Sensible Defaults:** Date defaults to "now". Fuel system defaults to "primary". Full tank defaults to "true".
 - **Keyboard Optimization:** Use `keyboardType="numeric"` for odometer, fuel amount, and cost fields.
 - **Clear States:** Empty states (e.g., no vehicles, no logs) must have helpful illustrations and a clear Call-to-Action (CTA).
 
-### 7.2 Edge Cases
+### 6.2 Edge Cases
 - **Missing Profile Name:** Handled by the fallback rule (`{model}_{plateNumber}`). If both are missing, use `Unnamed Vehicle`.
 - **Switching Units:** If a user changes their preferred consumption unit *after* logging fuel, historical logs should ideally display in the unit they were recorded in, or the app should clearly state "Converted to [New Unit]". (MVP approach: Store `fuelUnit` snapshot in the `FuelLog` to prevent historical data distortion).
 - **Dual Fuel Disabled:** If a user toggles `isDualFuel` off after having secondary data, the system should warn them that secondary capacity data will be cleared, or safely retain it in the DB but hide it from the UI.
@@ -172,14 +153,14 @@ interface FuelLog {
 
 ---
 
-## 8. Unit Conversion Strategy
+## 7. Unit Conversion Strategy
 Because users can mix units (e.g., Miles for distance, Liters for fuel), a dedicated `/lib/units.ts` utility will handle all conversions. 
 - **Rule:** The UI will display values in the user's selected units. 
 - **Calculation:** When calculating fuel consumption, the app will normalize the data to a base metric standard (e.g., Liters and Kilometers) internally, perform the math, and then convert the final result to the user's preferred display consumption unit.
 
 ---
 
-## 9. MVP Scope vs. Future Expansion
+### 8. MVP Scope vs. Future Expansion
 
 ### Included in MVP
 - Vehicle profile creation and editing (with all rules above)
@@ -189,11 +170,13 @@ Because users can mix units (e.g., Miles for distance, Liters for fuel), a dedic
 - Basic fuel log recording and list view
 - Settings page with Light, Dark, and Secret Black mode
 - Local-first data persistence (`expo-sqlite`)
+- **Automatic fuel logging via notifications** — parse banking app payment notifications (e.g., "Fuel purchase at Shell $58.20") to auto-create draft fuel logs with amount, timestamp, station (if parseable). Includes optional toggle in Settings to enable/disable.
+- **OCR receipt scanning** — integrate OCR library to extract fuel/service receipts via camera/gallery picker. Supports extracting cost, date, station name, fuel type. Results displayed as "Scanned" badge on log card.
+- **Fuel Log source tracking** — `source` field tracks origin: `'manual' | 'notification' | 'ocr'`. Notification logs include `parsedFromNotification: boolean` flag; OCR logs include `receiptImageUrl: string|null` for photo storage.
 
 ### Future Expansion (Out of Scope for MVP)
 - Maintenance and service reminder tracking
-- Receipt scanning (OCR)
+- Cloud sync and cross-device backup
 - Multi-user household sharing
 - Advanced analytics and consumption charts
-- Cloud sync and cross-device backup
 - Push notifications for low fuel or insurance expiry
