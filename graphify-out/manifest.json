@@ -1,0 +1,74 @@
+{
+  "package.json": {
+    "mtime": 1795607559.2705703,
+    "seen": 1795765889.1564357,
+    "ast_hash": "deb4ecf610318c14843cc85a38afa270",
+    "semantic_hash": "deb4ecf610318c14843cc85a38afa270"
+  },
+  "src/components/form/InputField.tsx": {
+    "mtime": 1795605736.1693516,
+    "seen": 1795765889.1564415,
+    "ast_hash": "71652d5bc10c73deac47e0000627186e",
+    "semantic_hash": "71652d5bc10c73deac47e0000627186e"
+  },
+  "src/components/form/SelectDropdown.tsx": {
+    "mtime": 1795605804.7121675,
+    "seen": 1795765889.1564438,
+    "ast_hash": "01860c451ae867aefc43a9acdd2b5152",
+    "semantic_hash": "01860c451ae867aefc43a9acdd2b5152"
+  },
+  "src/components/form/ToggleSwitch.tsx": {
+    "mtime": 1795605844.5622385,
+    "seen": 1795765889.1564455,
+    "ast_hash": "0e73e784876aa2d63bfec40ce65bbf29",
+    "semantic_hash": "0e73e784876aa2d63bfec40ce65bbf29"
+  },
+  "src/components/form/VehicleForm.tsx": {
+    "mtime": 1795606251.6258473,
+    "seen": 1795765889.1564467,
+    "ast_hash": "59a3fd8d0cfa1ece35b7a0f23a93617b",
+    "semantic_hash": "59a3fd8d0cfa1ece35b7a0f23a93617b"
+  },
+  "src/lib/data-import.ts": {
+    "mtime": 1795610112.368055,
+    "seen": 1795765889.156448,
+    "ast_hash": "1b297465328c72044ce74d68d5d3696f",
+    "semantic_hash": "1b297465328c72044ce74d68d5d3696f"
+  },
+  "src/lib/schemas.ts": {
+    "mtime": 1795605623.3247318,
+    "seen": 1795765889.156449,
+    "ast_hash": "2ceae7f8ad4fde6bcd02cfa9047b199e",
+    "semantic_hash": "2ceae7f8ad4fde6bcd02cfa9047b199e"
+  },
+  "src/lib/theme.ts": {
+    "mtime": 1795605518.6268516,
+    "seen": 1795765889.15645,
+    "ast_hash": "9a49c9dbfc60afd6ac90743dbdfffefc",
+    "semantic_hash": "9a49c9dbfc60afd6ac90743dbdfffefc"
+  },
+  "src/lib/types.ts": {
+    "mtime": 1795605584.017651,
+    "seen": 1795765889.1564512,
+    "ast_hash": "cda4b3f26be20296e2f0f943701b70b0",
+    "semantic_hash": "cda4b3f26be20296e2f0f943701b70b0"
+  },
+  "src/lib/units.ts": {
+    "mtime": 1795605467.2420528,
+    "seen": 1795765889.1564527,
+    "ast_hash": "8da0b9e7f8b4de77c01f6982a3328ae1",
+    "semantic_hash": "8da0b9e7f8b4de77c01f6982a3328ae1"
+  },
+  "tailwind.config.js": {
+    "mtime": 1795607616.7302222,
+    "seen": 1795765889.1564536,
+    "ast_hash": "36e13ac0e4f32a8211fdaa12f93fca6a",
+    "semantic_hash": "36e13ac0e4f32a8211fdaa12f93fca6a"
+  },
+  "tsconfig.json": {
+    "mtime": 1795607583.2697072,
+    "seen": 1795765889.1564548,
+    "ast_hash": "a0f126b50229dfd247504de76cde84d8",
+    "semantic_hash": "a0f126b50229dfd247504de76cde84d8"
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "communities": {
+    "0": [
+      "package_dependencies_react",
+      "package_dependencies_react_native",
+      "ref_native_wind",
+      "ref_react",
+      "ref_react_native",
+      "src_components_form_inputfield",
+      "src_components_form_inputfield_inputfield",
+      "src_components_form_inputfield_inputfieldprops",
+      "src_components_form_inputfield_styles",
+      "src_components_form_selectdropdown",
+      "src_components_form_selectdropdown_selectdropdown",
+      "src_components_form_selectdropdown_selectdropdownprops",
+      "src_components_form_selectdropdown_styles",
+      "src_components_form_toggleswitch",
+      "src_components_form_toggleswitch_styles",
+      "src_components_form_toggleswitch_toggleswitch",
+      "src_components_form_toggleswitch_toggleswitchprops",
+      "src_components_form_vehicleform",
+      "src_components_form_vehicleform_fuel_types",
+      "src_components_form_vehicleform_fuel_units",
+      "src_components_form_vehicleform_fueltype",
+      "src_components_form_vehicleform_fuelunit",
+      "src_components_form_vehicleform_styles",
+      "src_components_form_vehicleform_vehicleform",
+      "src_components_form_vehicleform_vehicleformdata",
+      "src_components_form_vehicleform_vehicleformprops",
+      "src_components_form_vehicleform_vehicleprofile",
+      "src_lib_theme",
+      "src_lib_theme_getcurrenttheme",
+      "src_lib_theme_issecretblackactive",
+      "src_lib_theme_theme",
+      "src_lib_theme_themeconfig",
+      "src_lib_types_themestate"
+    ],
+    "1": [
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowjs",
+      "tsconfig_compileroptions_allowsyntheticdefaultimports",
+      "tsconfig_compileroptions_baseurl",
+      "tsconfig_compileroptions_esmoduleinterop",
+      "tsconfig_compileroptions_forceconsistentcasinginfilenames",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_nofallthroughcasesinswitch",
+      "tsconfig_compileroptions_noimplicitany",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_strictnullchecks",
+      "tsconfig_compileroptions_target",
+      "tsconfig_exclude",
+      "tsconfig_include"
+    ],
+    "2": [
+      "fs",
+      "package_dependencies_zod",
+      "ref_fs",
+      "ref_zod",
+      "src_lib_data_import",
+      "src_lib_data_import_logimportfailure",
+      "src_lib_data_import_validateimportfile",
+      "src_lib_data_import_validationresult",
+      "src_lib_schemas",
+      "src_lib_schemas_fuellogformvalues",
+      "src_lib_schemas_fuellogschema",
+      "src_lib_schemas_themeschema",
+      "src_lib_schemas_vehicleformvalues",
+      "src_lib_schemas_vehicleschema"
+    ],
+    "3": [
+      "src_lib_types",
+      "src_lib_types_appstate",
+      "src_lib_types_consumptionunit",
+      "src_lib_types_distanceunit",
+      "src_lib_types_fuellog",
+      "src_lib_types_fuellogstate",
+      "src_lib_types_fueltype",
+      "src_lib_types_fuelunit",
+      "src_lib_types_secondaryfuelunit",
+      "src_lib_types_vehicle",
+      "src_lib_types_vehiclestate",
+      "src_lib_types_vehiclestats"
+    ],
+    "4": [
+      "package_devdependencies",
+      "package_devdependencies_babel_core",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_types_react",
+      "package_devdependencies_typescript",
+      "ref_babel_core",
+      "ref_tailwindcss",
+      "ref_types_react",
+      "ref_typescript"
+    ],
+    "5": [
+      "package",
+      "package_dependencies_expo_vector_icons",
+      "package_dependencies_react_navigation_native",
+      "package_main",
+      "package_name",
+      "package_version",
+      "ref_expo_vector_icons",
+      "ref_react_navigation_native"
+    ],
+    "6": [
+      "package_dependencies",
+      "package_dependencies_expo",
+      "package_dependencies_expo_router",
+      "package_dependencies_react_dom",
+      "ref_expo",
+      "ref_expo_router",
+      "ref_react_dom"
+    ],
+    "7": [
+      "package_scripts",
+      "package_scripts_android",
+      "package_scripts_ios",
+      "package_scripts_start",
+      "package_scripts_web"
+    ],
+    "8": [
+      "src_lib_units",
+      "src_lib_units_consumptioncalculator",
+      "src_lib_units_distanceconverter",
+      "src_lib_units_formatconsumption",
+      "src_lib_units_fuelconverter"
+    ],
+    "9": [
+      "package_dependencies_expo_blur",
+      "ref_expo_blur"
+    ],
+    "10": [
+      "package_dependencies_expo_constants",
+      "ref_expo_constants"
+    ],
+    "11": [
+      "package_dependencies_expo_font",
+      "ref_expo_font"
+    ],
+    "12": [
+      "package_dependencies_expo_image_picker",
+      "ref_expo_image_picker"
+    ],
+    "13": [
+      "package_dependencies_expo_linear_gradient",
+      "ref_expo_linear_gradient"
+    ],
+    "14": [
+      "package_dependencies_expo_linking",
+      "ref_expo_linking"
+    ],
+    "15": [
+      "package_dependencies_expo_notifications",
+      "ref_expo_notifications"
+    ],
+    "16": [
+      "package_dependencies_expo_sqlite",
+      "ref_expo_sqlite"
+    ],
+    "17": [
+      "package_dependencies_react_native_gesture_handler",
+      "ref_react_native_gesture_handler"
+    ],
+    "18": [
+      "package_dependencies_react_native_reanimated",
+      "ref_react_native_reanimated"
+    ],
+    "19": [
+      "package_dependencies_react_native_safe_area_context",
+      "ref_react_native_safe_area_context"
+    ],
+    "20": [
+      "package_dependencies_react_native_screens",
+      "ref_react_native_screens"
+    ],
+    "21": [
+      "package_dependencies_react_native_web",
+      "ref_react_native_web"
+    ],
+    "22": [
+      "package_dependencies_react_navigation_bottom_tabs",
+      "ref_react_navigation_bottom_tabs"
+    ],
+    "23": [
+      "package_dependencies_zustand",
+      "ref_zustand"
+    ],
+    "24": [
+      "tailwind_config",
+      "tailwindcss"
+    ]
+  },
+  "cohesion": {
+    "0": 0.10984848484848485,
+    "1": 0.08695652173913043,
+    "2": 0.17582417582417584,
+    "3": 0.16666666666666666,
+    "4": 0.2222222222222222,
+    "5": 0.25,
+    "6": 0.2857142857142857,
+    "7": 0.4,
+    "8": 0.4,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0
+  },
+  "gods": [
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 20
+    },
+    {
+      "id": "src_lib_theme_theme",
+      "label": "Theme",
+      "degree": 11
+    },
+    {
+      "id": "ref_react",
+      "label": "react",
+      "degree": 6
+    },
+    {
+      "id": "ref_react_native",
+      "label": "react-native",
+      "degree": 6
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "src_components_form_vehicleform_vehicleform",
+      "label": "VehicleForm()",
+      "degree": 4
+    },
+    {
+      "id": "ref_zod",
+      "label": "zod",
+      "degree": 4
+    },
+    {
+      "id": "src_components_form_inputfield_inputfield",
+      "label": "InputField()",
+      "degree": 3
+    },
+    {
+      "id": "src_components_form_selectdropdown_selectdropdown",
+      "label": "SelectDropdown()",
+      "degree": 3
+    },
+    {
+      "id": "src_components_form_toggleswitch_toggleswitch",
+      "label": "ToggleSwitch()",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "InputFieldProps",
+      "target": "Theme",
+      "source_files": [
+        "src/components/form/InputField.tsx",
+        "src/lib/theme.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "peripheral node `InputFieldProps` unexpectedly reaches hub `Theme`"
+    },
+    {
+      "source": "SelectDropdownProps",
+      "target": "Theme",
+      "source_files": [
+        "src/components/form/SelectDropdown.tsx",
+        "src/lib/theme.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "peripheral node `SelectDropdownProps` unexpectedly reaches hub `Theme`"
+    },
+    {
+      "source": "ToggleSwitchProps",
+      "target": "Theme",
+      "source_files": [
+        "src/components/form/ToggleSwitch.tsx",
+        "src/lib/theme.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "peripheral node `ToggleSwitchProps` unexpectedly reaches hub `Theme`"
+    },
+    {
+      "source": "VehicleFormProps",
+      "target": "Theme",
+      "source_files": [
+        "src/components/form/VehicleForm.tsx",
+        "src/lib/theme.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "peripheral node `VehicleFormProps` unexpectedly reaches hub `Theme`"
+    },
+    {
+      "source": "ThemeState",
+      "target": "Theme",
+      "source_files": [
+        "src/lib/types.ts",
+        "src/lib/theme.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "peripheral node `ThemeState` unexpectedly reaches hub `Theme`"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `react` connect `Community 0` to `Community 5`?",
+      "why": "High betweenness centrality (0.145) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.10984848484848485 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `react-native` connect `Community 0` to `Community 5`?",
+      "why": "High betweenness centrality (0.145) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `dependencies` connect `Community 6` to `Community 0`, `Community 2`, `Community 5`, `Community 9`, `Community 10`, `Community 11`, `Community 12`, `Community 13`, `Community 14`, `Community 15`, `Community 16`, `Community 17`, `Community 18`, `Community 19`, `Community 20`, `Community 21`, `Community 22`, `Community 23`?",
+      "why": "High betweenness centrality (0.144) - this node is a cross-community bridge."
+    }
+  ]
+}
